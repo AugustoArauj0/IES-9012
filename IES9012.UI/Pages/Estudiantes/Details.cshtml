@@ -1,0 +1,63 @@
+﻿@page
+@model IES9012.UI.Pages.Estudiantes.DetailsModel
+
+@{
+    ViewData["Nombre"] = "Detalle";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Estudiante</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Estudiante.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Estudiante.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Estudiante.Apellido)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Estudiante.Apellido)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Estudiante.FechaInscripcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Estudiante.FechaInscripcion)
+        </dd>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Estudiante.FechaInscripcion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Estudiante.Inscripciones)
+        </dt>
+
+        <dd class="col-sm-10">
+            <table class="table">
+                <tr>
+                    <th>Materia Nombre</th>
+                    <th>Calificacion</th>
+                </tr>
+                @foreach (var item in Model.Estudiante.Inscripciones)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Materias.NombreMateria)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nota)
+                        </td>
+                    </tr>
+                }
+            </table>
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Estudiante?.EstudianteId">Editar</a> |
+    <a asp-page="./Index">Retornar el Listado</a>
+</div>

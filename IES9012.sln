@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IES9012.UI", "IES9012.UI\IES9012.UI.csproj", "{437E4AB2-D2CD-4ACC-8EFF-6633BB380D7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IES9012.CORE", "IES9012.CORE\IES9012.CORE.csproj", "{28D31A98-5D22-46B9-9905-33C473785E8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{437E4AB2-D2CD-4ACC-8EFF-6633BB380D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{437E4AB2-D2CD-4ACC-8EFF-6633BB380D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{437E4AB2-D2CD-4ACC-8EFF-6633BB380D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{437E4AB2-D2CD-4ACC-8EFF-6633BB380D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D31A98-5D22-46B9-9905-33C473785E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D31A98-5D22-46B9-9905-33C473785E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D31A98-5D22-46B9-9905-33C473785E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D31A98-5D22-46B9-9905-33C473785E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1BFAB44-3230-4E5A-B7AF-54419C47944E}
+	EndGlobalSection
+EndGlobal
